@@ -5,6 +5,24 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+
+if (typeof(num)== 'number'){
+
+        let arrayDigitos = num.toString().split('');
+
+
+                  if (   (arrayDigitos.includes('.')) || (arrayDigitos.includes(',')) )
+
+                                                         {return false;}
+
+
+                                                           else return true;
+  
+  
+
+                              } else return false;
+
+
 }
 
 module.exports = esEntero;

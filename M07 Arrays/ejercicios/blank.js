@@ -1,10 +1,18 @@
-function mesesDelAño(array) {
-  // El array contiene algunos meses del año desordenados. Debes recorrerlo, buscar los meses "Enero",
-  // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
-  // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
-  // Tu código:
 
-  let nuevoarreglo = [];
+array = [
+  'Marzo',
+  'Diciembre',
+  'Abril',
+  'Junio',
+  'Julio',
+  'Noviembre',
+  'Enero',
+  'Mayo',
+  'Febrero',
+];
+
+
+let nuevoarreglo = [];
 
 if ( array.includes ('Enero') && array.includes ('Marzo') && array.includes ('Noviembre') ) {
 
@@ -28,12 +36,4 @@ if ( array.includes ('Enero') && array.includes ('Marzo') && array.includes ('No
 
 
 
-if (nuevoarreglo.length === 3) return nuevoarreglo; else return ("No se encontraron los meses pedidos");
-
-
-
-
-
-}
-
-module.exports = mesesDelAño;
+console.log (nuevoarreglo.length);
